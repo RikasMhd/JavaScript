@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+#container {
+    text-align: center;
+}
+
+#title {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* The main outer white card with the thick black border */
+#displayContainer {
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 30px;
+    padding: 30px 40px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* The massive digital clock numbers */
+#display {
+    font-size: 4.5rem;
+    font-family: monospace;
+    font-weight: bold;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+}
+
+#controls {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* Base button properties matching your editor's lines 35-39 */
+button {
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.1s ease;
+}
+
+/* Start Button styles */
+#startBtn {
+    background-color: hsl(115, 100%, 40%);
+}
+#startBtn:hover {
+    background-color: hsl(115, 100%, 30%);
+}
+
+/* Stop Button styles */
+#stopBtn {
+    background-color: hsl(10, 90%, 50%);
+}
+#stopBtn:hover {
+    background-color: hsl(10, 90%, 40%);
+}
+
+/* Reset Button styles */
+#resetBtn {
+    background-color: hsl(115, 100%, 40%);
+}
+#resetBtn:hover {
+    background-color: hsl(115, 100%, 30%);
+}

@@ -1,0 +1,54 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: hsl(0, 0%, 90%);
+}
+
+#container{
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+input[type="number"]{
+    font-size: 1.2rem;
+    padding: 5px;
+    width: 80px;
+    text-align: center;
+}
+
+button{
+    font-size: 1.3rem;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: hsl(120, 100%, 40%);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: hsl(120, 100%, 30%);
+}
+
+#password{
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: hsl(0, 0%, 20%);
+    word-wrap: break-word;
+    padding: 15px;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 5px;
+}

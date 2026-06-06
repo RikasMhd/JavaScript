@@ -1,0 +1,53 @@
+// .map() = accepts a callback and applies that function
+// to each element of an array, then return a new array
+
+//Ex1:
+const numbers = [1, 2, 3, 4, 5];
+const squares = numbers.map(square);
+const cubes = numbers.map(cube);
+
+console.log(numbers); // [1, 2, 3, 4, 5]  <-- original unchanged
+console.log(squares); // [1, 4, 9, 16, 25]
+console.log(cubes);   // [1, 8, 27, 64, 125]
+
+function square(element){
+    return Math.pow(element, 2)
+}
+
+function cube(element){
+    return Math.pow(element, 3)
+}
+
+
+
+//Ex:2
+const students = ["Spongebob", "Patrick", "Squidward", "Sandy"];
+const studentsUpper = students.map(upperCase);
+const studentsLower = students.map(lowerCase);
+
+console.log(students);      // ["Spongebob", "Patrick", "Squidward", "Sandy"]
+console.log(studentsUpper); // ["SPONGEBOB", "PATRICK", "SQUIDWARD", "SANDY"]
+console.log(studentsLower); // ["spongebob", "patrick", "squidward", "sandy"]
+
+function upperCase(element){
+    return element.toUpperCase();
+}
+
+function lowerCase(element){
+    return element.toLowerCase();
+}
+
+
+//Ex:3
+// .map() = accepts a callback and applies that function
+// to each element of an array, then return a new array
+
+const dates = ["2024-1-10", "2025-2-20", "2026-3-30"];
+const formattedDates = dates.map(formatDates);
+
+console.log(formattedDates);
+
+function formatDates(element){
+    const parts = element.split("-");
+    return `${parts[1]}/${parts[2]}/${parts[0]}`;
+}
